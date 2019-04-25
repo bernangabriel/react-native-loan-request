@@ -1,0 +1,47 @@
+{
+  "name": "tailorapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "compile-android": "cd android && ./gradlew build /android",
+    "android": "react-native run-android",
+    "android-build": "android/gradlew build",
+    "reinstall": "rmdir /q /s node_modules && npm install",
+    "android-release": "react-native run-android --variant=release"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "crypto-js": "^3.1.9-1",
+    "moment": "^2.22.2",
+    "native-base": "^2.8.1",
+    "qs": "^6.6.0",
+    "react": "16.6.0-alpha.8af6728",
+    "react-native": "0.57.4",
+    "react-native-camera": "^1.5.1",
+    "react-native-dialog-component": "^0.2.17",
+    "react-native-elements": "^0.19.1",
+    "react-native-fetch-blob": "^0.10.8",
+    "react-native-fs": "^2.12.1",
+    "react-native-image-picker": "^0.27.2",
+    "react-native-indicators": "^0.13.0",
+    "react-native-modal-filter-picker": "^1.3.4",
+    "react-native-pdf": "^5.0.9",
+    "react-native-popup-dialog": "^0.16.1",
+    "react-native-tab-view": "^1.3.1",
+    "react-native-vector-icons": "^6.1.0",
+    "react-navigation": "^2.18.3",
+    "rn-fetch-blob": "^0.10.13",
+    "underscore": "^1.9.1"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.48.2",
+    "react-test-renderer": "16.6.0-alpha.8af6728"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
